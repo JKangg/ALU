@@ -237,9 +237,9 @@ module au_top (
       seg.values[3] = 5d22; //S
       seg.values[2] = 5d21; //r 
       seg.values[1] = 5d0; //0
-        io_seg = ~seg.seg;
+      io_seg = ~seg.seg;
       io_sel = ~seg.sel;
-        //seg.values = autotest.out;
+      seg.values = autotest.out;
         if(io_dip[0][0]){
        state.d = state.MANUAL;
       if(io_button[2]){
